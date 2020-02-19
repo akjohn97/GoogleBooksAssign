@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="82" id="KGk-i7-Jjw" customClass="BookTableCell" customModule="GoogleBooksAssessment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C2B-hD-9TQ">
+                        <rect key="frame" x="9" y="6" width="302" height="70"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="4nR-wy-4Ta">
+                                <rect key="frame" x="93" y="6" width="99" height="58"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Harry Potter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bo-Hh-CVe">
+                                        <rect key="frame" x="0.0" y="0.0" width="99" height="22"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JK Rowling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTF-XQ-WMY">
+                                        <rect key="frame" x="0.0" y="40" width="99" height="18"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gos-w1-eqe">
+                                <rect key="frame" x="15" y="6" width="58" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="L52-za-khw"/>
+                                    <constraint firstAttribute="width" constant="58" id="TZa-Xl-sNj"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4nR-wy-4Ta" firstAttribute="leading" secondItem="gos-w1-eqe" secondAttribute="trailing" constant="20" id="DuU-Bt-M7u"/>
+                            <constraint firstItem="gos-w1-eqe" firstAttribute="top" secondItem="4nR-wy-4Ta" secondAttribute="top" id="Hyv-Us-p0t"/>
+                            <constraint firstItem="gos-w1-eqe" firstAttribute="bottom" secondItem="4nR-wy-4Ta" secondAttribute="bottom" id="PqL-Hv-Wiw"/>
+                            <constraint firstItem="gos-w1-eqe" firstAttribute="leading" secondItem="C2B-hD-9TQ" secondAttribute="leading" constant="15" id="TEd-1l-bb5"/>
+                            <constraint firstItem="gos-w1-eqe" firstAttribute="centerY" secondItem="C2B-hD-9TQ" secondAttribute="centerY" id="XYC-XQ-deR"/>
+                            <constraint firstItem="gos-w1-eqe" firstAttribute="top" secondItem="C2B-hD-9TQ" secondAttribute="top" constant="6" id="i7b-oU-ID4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="C2B-hD-9TQ" secondAttribute="trailing" constant="9" id="TXi-3N-9YL"/>
+                    <constraint firstItem="C2B-hD-9TQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="dG6-Mq-sNN"/>
+                    <constraint firstItem="C2B-hD-9TQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="pXz-6z-daO"/>
+                    <constraint firstAttribute="bottom" secondItem="C2B-hD-9TQ" secondAttribute="bottom" constant="6" id="tRX-IV-aN2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bookBackView" destination="C2B-hD-9TQ" id="7vB-zK-QbI"/>
+                <outlet property="bookImage" destination="gos-w1-eqe" id="9XI-KG-y8b"/>
+                <outlet property="bookMainLabel" destination="4bo-Hh-CVe" id="y82-Qt-C3U"/>
+                <outlet property="bookSubLabel" destination="gTF-XQ-WMY" id="ifL-TM-zHg"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="113.16964285714285"/>
+        </tableViewCell>
+    </objects>
+</document>
